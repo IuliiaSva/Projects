@@ -1,0 +1,22 @@
+h1{
+ font-size: 22px;
+  font-family: "Arial", Courier, monospace;
+  text-align: center;
+ }
+ h2{
+ font-size: 18px;
+  font-family: "Arial", Courier, monospace;
+  text-align: center;
+ }
+ body {
+ font-family: "Arial",
+ font-size: 14px;
+ text-align: left;
+  background-color: lightblue;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
