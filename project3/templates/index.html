@@ -1,7 +1,8 @@
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../static/css/index.css">
+
     <h1> <a href="https://ru.wikipedia.org/wiki/Python"> Python </a> </h1>
      <img src="{{url_for('static', filename='img/Python-logo-notext.png')}}">
     <meta charset="UTF-8">
@@ -25,7 +26,8 @@
      <li> <dfn>Мультиплатформенность:</dfn> Python совместим со всеми основными операционными системами.
 </li>
  </ul>
-
+{% endblock %}
+<link rel="stylesheet" href="../static/css/index.css">
 <h2> <ins> Обучение Python. </ins> </h2>
 <table>
   <tr>
@@ -70,10 +72,6 @@
   </tr>
 </table>
 <p>
-    <form action="/Дневник программиста" method="POST">
-    <label for="name">Имя: </label>">
-    <input type="text" id="name" name="name"><br>
-    <button type="submit">Дневник программиста </button>>
   Следующий старт обучения - 12 октября 2025 года.
   <time datetime="2025-10-12"></time>
 </p>

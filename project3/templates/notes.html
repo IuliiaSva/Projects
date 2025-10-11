@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block content %}
+<p> <em> <h1> Дневник программиста </h1> </em> </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Добавьте новую запись</h3>
+    <form method="POST">
+        <div>
+            <label for="title">Заголовок:</label><br>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="text">Текст:</label><br>
+            <textarea id="text" name="text" rows="4" cols="50" required></textarea>
+        </div>
+        <button type="submit">Добавить запись</button>
+    </form>
+
+    <h3>Существующие записи</h3>
+    <ul>
+        {% for title, text in records.items() %}
+            <li>
+                <strong>{{ title }}</strong>: {{ text }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+{% endblock %}
+</html>

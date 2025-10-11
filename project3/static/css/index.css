@@ -8,6 +8,11 @@ h1{
   font-family: "Arial", Courier, monospace;
   text-align: center;
  }
+ h3 {
+ font-size: 16px;
+  font-family: "Arial", Courier, monospace;
+  text-align: left;
+ }
  body {
  font-family: "Arial",
  font-size: 14px;
